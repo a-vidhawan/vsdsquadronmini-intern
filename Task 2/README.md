@@ -3,8 +3,7 @@
 - For this task, I decided to create a simple digital clock, using C due to the time constraints. I plan to use this program with the VSDSquadron Mini to build a Nyxie Alarm Clock.
 
 - Here is the code for the Digital Clock:
-    `
-    
+
         #include <stdio.h>
         #include <time.h>
         #include <unistd.h>
@@ -48,7 +47,6 @@
         }
         return 0;
         }
-    `
 
 - The code successfully compiled using gcc, O1 and Ofast compilers. Snapshots of successfull compilation below:
 
