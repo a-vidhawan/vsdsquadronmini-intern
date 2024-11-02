@@ -54,4 +54,8 @@
 
 - Here is a snapshot of the objdump, assembly code for O1, and Ofast profiles respectively:
 
-- 
+    ![O1 - 1](image-1.png)
+    ![O1 - 2](image-2.png)
+
+    ![Ofast - 1](image-3.png)
+    ![Ofast - 2](image-4.png)
