@@ -28,37 +28,84 @@ RISC-V instructions can be split up into 5 main catrgories:
 
 ![alt text](image-1.png)
 
-Used for arithmetic and logical operations that involve registers
+- Used for arithmetic and logical operations that involve registers.
+- Typically have 2 source and 1 destination register.
+- Fields:
+    - `opcode` : 
+    - `rd` :
+    - `funct3` :
+    - `rs1` : 
+    - `rs2` : 
+    - `funct7` :
+- Example: ``
 
 ### Immediate Type Instructions
 
 ![alt text](image-2.png)
 
-Instruction with an immediate (constant) value, typically used for operations that involve a constant operand, like load instructions or environment call/returns.
+- Instruction with an immediate (constant) value, typically used for operations that involve a constant operand, like load instructions or environment call/returns.
+- Fields:
+    - `opcode` : 
+    - `rd` :
+    - `funct3` :
+    - `rs1` : 
+    - `imm[11:0]` :
+- Example: ``
 
 ### Store Type Instructions
 
 ![alt text](image-3.png)
 
-Used for store operations, where a value from a register is stored into memory.
+- Used for store operations, where a value from a register is stored into memory.
+- Fields:
+    - `opcode` : 
+    - `imm[4:0]` :
+    - `funct3` :
+    - `rs1` :
+    - `rs2` :
+    - `imm[11:5]` :
+- Example: ``
 
 ### Branch Type Instructions
 
 ![alt text](image-4.png)
 
-Conditional branch instructions, used to alter the flow of execution based on the result of a comparison.
+- Conditional branch instructions, used to alter the flow of execution based on the result of a comparison.
+- Fields:
+    - `opcode` : 
+    - `imm[11]` :
+    - `imm[4:1]` : 
+    - `funct3` :
+    - `rs1` :
+    - `rs2` :
+    - `imm[10:5]` :
+    - `imm[12]` :
+- Example: ``
 
 ### Upper-Immediate Type Instructions
 
 ![alt text](image-5.png)
 
-Used for instructions that operate on upper immediate values, such as loading a 20-bit immediate into the upper bits of a register.
+- Used for instructions that operate on upper immediate values, such as loading a 20-bit immediate into the upper bits of a register.
+- Fields:
+    - `opcode` : 
+    - `rd` : 
+    - `imm[31:12]` :
+- Example: ``
 
 ### Jump Type Instructions
 
 ![alt text](image-6.png)
 
-Used for jump instructions, which are unconditional control transfers.
+- Used for jump instructions, which are unconditional control transfers.
+- Fields:
+    - `opcode` : 
+    - `rd` :
+    - `imm[19:12]` :
+    - `imm[11]` :
+    - `imm[10:1]` :
+    - `imm[20]` :
+- Example: ``
 
 ### Special Implementation
 
