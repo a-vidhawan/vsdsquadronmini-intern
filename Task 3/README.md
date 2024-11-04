@@ -110,3 +110,23 @@ RISC-V instructions can be split up into 5 main catrgories:
 ### Special Implementation
 
 The No-Op instruction is crucial to facilitate pipelining of a procesor, and is hence a part of all ISAs today. For this architecture, the NOP Instruction is encoded as `addi x0, x0, 0`.
+
+### Summary of 15 RISC-V Instructions with 32-Bit Encoding
+
+| Assembly Instruction   | Instruction Type | Encoding (Hexadecimal)  | Function |
+|------------------------|------------------|-------------------------|----------|
+| ``                     | U-Type           | ``                      |          |
+| ``                     | I-Type           | ``                      |          |
+| ``                     | I-Type           | ``                      |          |
+| ``                     | S-Type           | ``                      |          |
+| ``                     | I-Type           | ``                      |          |
+| ``                     | U-Type           | ``                      |          |
+| ``                     | R-Type           | ``                      |          |
+| ``                     | R-Type           | ``                      |          |
+| ``                     | J-Type           | ``                      |          |
+| ``                     | I-Type           | ``                      |          |
+| ``                     | I-Type           | ``                      |          |
+| ``                     | B-Type           | ``                      |          |
+| ``                     | R-Type           | ``                      |          |
+| ``                     | R-Type           | ``                      |          |
+| ``                     | R-Type           | ``                      |          |
