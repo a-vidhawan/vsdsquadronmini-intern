@@ -37,7 +37,7 @@ RISC-V instructions can be split up into 5 main catrgories:
     - `rs1` : 
     - `rs2` : 
     - `funct7` :
-- Example: ``
+- Example: `add a0, a5, a4`
 
 ### Immediate Type Instructions
 
@@ -50,7 +50,7 @@ RISC-V instructions can be split up into 5 main catrgories:
     - `funct3` :
     - `rs1` : 
     - `imm[11:0]` :
-- Example: ``
+- Example: `add a0, s5, 696`
 
 ### Store Type Instructions
 
@@ -64,7 +64,7 @@ RISC-V instructions can be split up into 5 main catrgories:
     - `rs1` :
     - `rs2` :
     - `imm[11:5]` :
-- Example: ``
+- Example: `sw a3, 0(a2)`
 
 ### Branch Type Instructions
 
@@ -80,7 +80,7 @@ RISC-V instructions can be split up into 5 main catrgories:
     - `rs2` :
     - `imm[10:5]` :
     - `imm[12]` :
-- Example: ``
+- Example: `bne s1, s8, 1012c`
 
 ### Upper-Immediate Type Instructions
 
@@ -91,7 +91,7 @@ RISC-V instructions can be split up into 5 main catrgories:
     - `opcode` : 
     - `rd` : 
     - `imm[31:12]` :
-- Example: ``
+- Example: `lui s7, 0x21`
 
 ### Jump Type Instructions
 
@@ -105,7 +105,7 @@ RISC-V instructions can be split up into 5 main catrgories:
     - `imm[11]` :
     - `imm[10:1]` :
     - `imm[20]` :
-- Example: ``
+- Example: `jal ra, 10584`
 
 ### Special Implementation
 
@@ -113,20 +113,20 @@ The No-Op instruction is crucial to facilitate pipelining of a procesor, and is 
 
 ### Summary of 15 RISC-V Instructions with 32-Bit Encoding
 
-| Assembly Instruction   | Instruction Type | Encoding (Hexadecimal)  | Function |
-|------------------------|------------------|-------------------------|----------|
-| ``                     | -Type           | ``                      |          |
-| ``                     | -Type           | ``                      |          |
-| ``                     | -Type           | ``                      |          |
-| ``                     | -Type           | ``                      |          |
-| ``                     | -Type           | ``                      |          |
-| ``                     | -Type           | ``                      |          |
-| ``                     | -Type           | ``                      |          |
-| ``                     | -Type           | ``                      |          |
-| ``                     | -Type           | ``                      |          |
-| ``                     | -Type           | ``                      |          |
-| ``                     | -Type           | ``                      |          |
-| ``                     | -Type           | ``                      |          |
-| ``                     | -Type           | ``                      |          |
-| ``                     | -Type           | ``                      |          |
-| ``                     | -Type           | ``                      |          |
+| Assembly Instruction   | Instruction Type | Encoding (Hexadecimal)  |
+|------------------------|------------------|-------------------------|
+| `addi sp, sp, -80`     | I-Type           | `0xfb010113`            |
+| `lui a0, 0x21`         | U-Type           | `0x00021537`            |
+| `jal ra, 119c4`        | J-Type           | `0x79c010ef`            |
+| `addiw s3, s0, 1`      | I-Type           | `0x0014099b`            |
+| `beq s1, s8, 10178`    | B-Type           | `0X05848863`            |
+| `mv a3, s0`            | R-Type           | `0x00040693`            |
+| `li a3, 0`             | I-Type           | `0x00000693`            |
+| `j 10120`              | J-Type           | `0xf79ff06f`            |
+| `sd ra, 72`            | S-Type           | `0x04113423`            |
+| `ld a0, 16`            | I-Type           | `0x0107b503`            |
+| `bne s0, s3, 10244`    | B-Type           | `0xfd3416e3`            |
+| `addiw s2, s2, 1`      | I-Type           | `0x0019091b`            |
+| `jal ra, 11bf8`        | J-Type           | `0x311010ef`            |
+| `mv a3, s0`            | R-Type           | `0x00040693`            |
+| `addi a0, s5, 696`     | I-Type           | `0x2b8a8513`            |
