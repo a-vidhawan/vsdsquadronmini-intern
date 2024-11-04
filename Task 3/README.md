@@ -26,24 +26,40 @@ RISC-V instructions can be split up into 5 main catrgories:
 
 ### Register Type Intructions
 
+![alt text](image-1.png)
+
 Used for arithmetic and logical operations that involve registers
 
 ### Immediate Type Instructions
+
+![alt text](image-2.png)
 
 Instruction with an immediate (constant) value, typically used for operations that involve a constant operand, like load instructions or environment call/returns.
 
 ### Store Type Instructions
 
+![alt text](image-3.png)
+
 Used for store operations, where a value from a register is stored into memory.
 
 ### Branch Type Instructions
+
+![alt text](image-4.png)
 
 Conditional branch instructions, used to alter the flow of execution based on the result of a comparison.
 
 ### Upper-Immediate Type Instructions
 
+![alt text](image-5.png)
+
 Used for instructions that operate on upper immediate values, such as loading a 20-bit immediate into the upper bits of a register.
 
 ### Jump Type Instructions
 
+![alt text](image-6.png)
+
 Used for jump instructions, which are unconditional control transfers.
+
+### Special Implementation
+
+The No-Op instruction is crucial to facilitate pipelining of a procesor, and is hence a part of all ISAs today. For this architecture, the NOP Instruction is encoded as `addi x0, x0, 0`.
