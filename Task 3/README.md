@@ -22,14 +22,28 @@ RISC-V instructions can be split up into 5 main catrgories:
 - U Type - Upper-Immediate Instructions
 - J Type - Jump Instructions
 
+![](image.png)
+
 ### Register Type Intructions
+
+Used for arithmetic and logical operations that involve registers
 
 ### Immediate Type Instructions
 
+Instruction with an immediate (constant) value, typically used for operations that involve a constant operand, like load instructions or environment call/returns.
+
 ### Store Type Instructions
+
+Used for store operations, where a value from a register is stored into memory.
 
 ### Branch Type Instructions
 
+Conditional branch instructions, used to alter the flow of execution based on the result of a comparison.
+
 ### Upper-Immediate Type Instructions
 
+Used for instructions that operate on upper immediate values, such as loading a 20-bit immediate into the upper bits of a register.
+
 ### Jump Type Instructions
+
+Used for jump instructions, which are unconditional control transfers.
