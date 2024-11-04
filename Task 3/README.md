@@ -115,18 +115,18 @@ The No-Op instruction is crucial to facilitate pipelining of a procesor, and is 
 
 | Assembly Instruction   | Instruction Type | Encoding (Hexadecimal)  | Function |
 |------------------------|------------------|-------------------------|----------|
-| ``                     | U-Type           | ``                      |          |
-| ``                     | I-Type           | ``                      |          |
-| ``                     | I-Type           | ``                      |          |
-| ``                     | S-Type           | ``                      |          |
-| ``                     | I-Type           | ``                      |          |
-| ``                     | U-Type           | ``                      |          |
-| ``                     | R-Type           | ``                      |          |
-| ``                     | R-Type           | ``                      |          |
-| ``                     | J-Type           | ``                      |          |
-| ``                     | I-Type           | ``                      |          |
-| ``                     | I-Type           | ``                      |          |
-| ``                     | B-Type           | ``                      |          |
-| ``                     | R-Type           | ``                      |          |
-| ``                     | R-Type           | ``                      |          |
-| ``                     | R-Type           | ``                      |          |
+| ``                     | -Type           | ``                      |          |
+| ``                     | -Type           | ``                      |          |
+| ``                     | -Type           | ``                      |          |
+| ``                     | -Type           | ``                      |          |
+| ``                     | -Type           | ``                      |          |
+| ``                     | -Type           | ``                      |          |
+| ``                     | -Type           | ``                      |          |
+| ``                     | -Type           | ``                      |          |
+| ``                     | -Type           | ``                      |          |
+| ``                     | -Type           | ``                      |          |
+| ``                     | -Type           | ``                      |          |
+| ``                     | -Type           | ``                      |          |
+| ``                     | -Type           | ``                      |          |
+| ``                     | -Type           | ``                      |          |
+| ``                     | -Type           | ``                      |          |
