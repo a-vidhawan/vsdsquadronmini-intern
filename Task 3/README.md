@@ -15,12 +15,12 @@ We'll be taking a look at the RV32I base integer instruction set, for the RISC-V
 For this specific architecture, instructions are 32-bit wide, and we have access to 32 unprivileged registers. Though, of these unprivileged registers, it is a standard to use x1 as a link register, x2 as the stack pointer and x5 as an alternate link register. The program counter has its own register.
 
 RISC-V instructions can be split up into 5 main catrgories:
-    - R Type - Register Instructions
-    - I Type - Immediate Instructions
-    - S Type - Store Instructions
-    - B Type - Branch Instructions
-    - U Type - Upper-Immediate Instructions
-    - J Type - Jump Instructions
+- R Type - Register Instructions
+- I Type - Immediate Instructions
+- S Type - Store Instructions
+- B Type - Branch Instructions
+- U Type - Upper-Immediate Instructions
+- J Type - Jump Instructions
 
 ### Register Type Intructions
 
