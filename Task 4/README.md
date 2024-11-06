@@ -19,4 +19,57 @@ This task requires us to simulate some C/Assmebly code on a netlist - Soft Copy 
 
 ## Step By Step Analysis of Instructions (cycle-by-cycle)
 
+The Window on the left in all the screenshots show the instruction code for current instructions, values of both registers addressed, and ALU output.
 
+- Instruction 1: `add r6, r1, r2`
+
+![alt text](image-3.png)
+
+- Instruction 2: `sub r7, r1, r2`
+
+![alt text](image-4.png)
+
+- Instruction 3: `and r8, r1, r3`
+
+![alt text](image-5.png)
+
+- Instruction 4: `or r9, r2, r5`
+
+![alt text](image-6.png)
+
+- Instruction 5: `xor r10, r1, r4`
+
+![alt text](image-7.png)
+
+- Instruction 6: `slt r11, r2, r4`
+
+![alt text](image-8.png)
+
+- Instruction 7: `addi r12, r4, 5`
+
+![alt text](image-9.png)
+
+- Instruction 8: `sw r3, r1, 2`
+
+![alt text](image-10.png)
+
+- Instruction 9: `lw r13, r1, 2`
+
+
+
+- Instruction 10: `beq r0, r0, 15`
+
+
+- Instruction 11: `add r14, r2, r2`
+
+
+- Instruction 12: `bne r0, r1, 20`
+
+
+- Instruction 13: `addi r12, r4, 5`
+
+
+- Instruction 14: `sll r15, r1, r2`
+
+
+- Instruction 15: `srl r16, r14, r2`
