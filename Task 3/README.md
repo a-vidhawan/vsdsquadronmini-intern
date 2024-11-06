@@ -31,12 +31,12 @@ RISC-V instructions can be split up into 5 main catrgories:
 - Used for arithmetic and logical operations that involve registers.
 - Typically have 2 source and 1 destination register.
 - Fields:
-    - `opcode` : 
-    - `rd` :
-    - `funct3` :
-    - `rs1` : 
-    - `rs2` : 
-    - `funct7` :
+    - `opcode` : Operation code, used to determine category of operation
+    - `rd` : Destination Register
+    - `funct3` : 3 bits of function modifier to specify the kind of operation required
+    - `rs1` : Source Register 1
+    - `rs2` : Source Register 2
+    - `funct7` : 7 bits of function modifier to specify the kind of operation required
 - Example: `add a0, a5, a4`
 
 ### Immediate Type Instructions
@@ -45,12 +45,12 @@ RISC-V instructions can be split up into 5 main catrgories:
 
 - Instruction with an immediate (constant) value, typically used for operations that involve a constant operand, like load instructions or environment call/returns.
 - Fields:
-    - `opcode` : 
-    - `rd` :
-    - `funct3` :
-    - `rs1` : 
-    - `imm[11:0]` :
-- Example: `add a0, s5, 696`
+    - `opcode` : Operation code, used to determine category of operation
+    - `rd` : Destination Register
+    - `funct3` : 3 bits of function modifier to specify the kind of operation required
+    - `rs1` : Source Register 1
+    - `imm[11:0]` : 12 bits of immediate value
+- Example: `addi a0, s5, 696`
 
 ### Store Type Instructions
 
@@ -58,12 +58,12 @@ RISC-V instructions can be split up into 5 main catrgories:
 
 - Used for store operations, where a value from a register is stored into memory.
 - Fields:
-    - `opcode` : 
-    - `imm[4:0]` :
-    - `funct3` :
-    - `rs1` :
-    - `rs2` :
-    - `imm[11:5]` :
+    - `opcode` : Operation code, used to determine category of operation
+    - `imm[4:0]` : Lower 5 bits of immediate value
+    - `funct3` : 3 bits of function modifier to specify the kind of operation required
+    - `rs1` : Source Register 1
+    - `rs2` : Source Register 2
+    - `imm[11:5]` : Upper 7 bits of immediate value
 - Example: `sw a3, 0(a2)`
 
 ### Branch Type Instructions
@@ -72,14 +72,14 @@ RISC-V instructions can be split up into 5 main catrgories:
 
 - Conditional branch instructions, used to alter the flow of execution based on the result of a comparison.
 - Fields:
-    - `opcode` : 
-    - `imm[11]` :
-    - `imm[4:1]` : 
-    - `funct3` :
-    - `rs1` :
-    - `rs2` :
-    - `imm[10:5]` :
-    - `imm[12]` :
+    - `opcode` : Operation code, used to determine category of operation
+    - `imm[11]` : Immediate value bit 11
+    - `imm[4:1]` : Bits 4 to 1 of Immediate value
+    - `funct3` : 3 bits of function modifier to specify the kind of operation required
+    - `rs1` : Source Register 1
+    - `rs2` : Source Register 2
+    - `imm[10:5]` : Bits 10 to 5 of Immediate Value
+    - `imm[12]` : Immediate Value Bit 12
 - Example: `bne s1, s8, 1012c`
 
 ### Upper-Immediate Type Instructions
@@ -88,9 +88,9 @@ RISC-V instructions can be split up into 5 main catrgories:
 
 - Used for instructions that operate on upper immediate values, such as loading a 20-bit immediate into the upper bits of a register.
 - Fields:
-    - `opcode` : 
-    - `rd` : 
-    - `imm[31:12]` :
+    - `opcode` : Operation code, used to determine category of operation
+    - `rd` : Destination Register
+    - `imm[31:12]` : 20 bit Upper Immediate Value
 - Example: `lui s7, 0x21`
 
 ### Jump Type Instructions
@@ -99,12 +99,12 @@ RISC-V instructions can be split up into 5 main catrgories:
 
 - Used for jump instructions, which are unconditional control transfers.
 - Fields:
-    - `opcode` : 
-    - `rd` :
-    - `imm[19:12]` :
-    - `imm[11]` :
-    - `imm[10:1]` :
-    - `imm[20]` :
+    - `opcode` : Operation code, used to determine category of operation
+    - `rd` : Destinatioon Register
+    - `imm[19:12]` : Bits 19 to 12 of Immediate Value
+    - `imm[11]` : Immediate Value Bit 11
+    - `imm[10:1]` : Bits 10 to 1 of Immediate Value
+    - `imm[20]` : Immediate Value Bit 20
 - Example: `jal ra, 10584`
 
 ### Special Implementation
