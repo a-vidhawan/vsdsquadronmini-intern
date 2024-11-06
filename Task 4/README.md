@@ -55,13 +55,15 @@ The Window on the left in all the screenshots show the instruction code for curr
 
 - Instruction 9: `lw r13, r1, 2`
 
-
+![alt text](image-11.png)
 
 - Instruction 10: `beq r0, r0, 15`
 
+![alt text](image-12.png)
 
 - Instruction 11: `add r14, r2, r2`
 
+![alt text](image-13.png)
 
 - Instruction 12: `bne r0, r1, 20`
 
