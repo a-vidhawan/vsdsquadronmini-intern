@@ -64,14 +64,3 @@ The Window on the left in all the screenshots show the instruction code for curr
 - Instruction 11: `add r14, r2, r2`
 
 ![alt text](image-13.png)
-
-- Instruction 12: `bne r0, r1, 20`
-
-
-- Instruction 13: `addi r12, r4, 5`
-
-
-- Instruction 14: `sll r15, r1, r2`
-
-
-- Instruction 15: `srl r16, r14, r2`
