@@ -17,7 +17,8 @@ This project aims to act as a proof of concept and somewhat of a testing stage f
 - **Output:** The 0.96 inch display is connected to PC1(SDA), PC2(SCL), 5V(VDD) and GND for I2C communcation with the OLED Display
 ## Source Code
 
-`#include "ch32v00x.h" // Include the CH32 header file for your microcontroller
+```
+#include "ch32v00x.h" // Include the CH32 header file for your microcontroller
 #define OLED_ADDRESS 0x3C  // I2C address for the SSD1306 OLED display
 // SSD1306 command bytes
 #define SSD1306_COMMAND 0x00
@@ -213,4 +214,5 @@ void OLED_Command(uint8_t command)
     I2C_SendData(I2C1, command);
     while (!I2C_CheckEvent(I2C1, I2C_EVENT_MASTER_BYTE_TRANSMITTED));
     I2C_GenerateSTOP(I2C1, ENABLE);
-}`
+}
+```
