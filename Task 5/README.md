@@ -17,6 +17,8 @@ This project aims to act as a proof of concept and somewhat of a testing stage f
 - **Output:** The 0.96 inch display is connected to PC1(SDA), PC2(SCL), 5V(VDD) and GND for I2C communcation with the OLED Display.
 - Also, the TX & RX pins on the VSD and Arduino are conneted to allow Serial Communication.
 
+![alt text](finfin.png)
+
 ## Source Code: VSD
 ```
 #include <oled_small.h>
