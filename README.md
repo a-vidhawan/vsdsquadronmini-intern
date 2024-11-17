@@ -7,9 +7,9 @@ Please look inside each specific folder, to see Documentation for Tasks performe
 The final project - Macro Pad - is documented in the 'Task 5' folder.
 
 ## Details
-**Name:** Aarav Vidhawan
-**University:** UC San Diego
-**Email:** aarav@printsales.in
+**Name:** Aarav Vidhawan \
+**University:** UC San Diego \
+**Email:** aarav@printsales.in \
 **Linkedin:** linkedin.com/in/a-vidhawan/
 
 ## Acknowledgments
