@@ -1,4 +1,4 @@
-#VSDSquadronMini Research Internship
+# VSDSquadronMini Research Internship
 
 Research Internship on learning about, and implementing a final project on the RISC-V platform (CH32V003) using the VSDSquadron Mini Developmnet Board.
 
