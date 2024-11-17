@@ -10,6 +10,6 @@ The final project - Macro Pad - is documented in the 'Task 5' folder.
 **Name:** Aarav Vidhawan \
 **University:** UC San Diego \
 **Email:** aarav@printsales.in \
-**Linkedin:** [a-vidhawan](https://www.linkedin.com/in/a-vidhawan/)
+**LinkedIn:** [a-vidhawan](https://www.linkedin.com/in/a-vidhawan/)
 
 ## Acknowledgments
